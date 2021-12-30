@@ -1,0 +1,23 @@
+.App {
+  font-family: "Muli", sans-serif;
+}
+
+.header_banner {
+  /* justify-content: center;
+  align-items: center; */
+  background-image: url("./assets/images/banner-1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin: 0 auto; */
+  /* padding-bottom: 00px; */
+  height: 875px;
+}
+
+.features {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* <iframe width="500" height="500" src="https://www.youtube.com/embed/clXBiR01kUM" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe> */

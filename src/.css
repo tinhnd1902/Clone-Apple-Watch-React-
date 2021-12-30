@@ -1,0 +1,11 @@
+*{
+  background-image: url('') ;
+  background-color: aqua;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:absolute;
+}
