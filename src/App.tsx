@@ -7,6 +7,9 @@ import SubHome from './page/aboutWatch';
 import Features from './page/coreFeatures';
 import ProductDemo from './page/productDemo';
 import WhyChooseOurProduct from './page/whyChooseOurProduct';
+import OurProduct from './page/ourProduct';
+import GetUpToDate from './page/getUpToDate';
+import Footer from './page/footer';
 
 function App() {
   return (
@@ -19,13 +22,22 @@ function App() {
         <SubHome />
       </div>
       <div className='features'>
-        <Features/>
+        <Features />
       </div>
       <div>
-        <ProductDemo/>
+        <ProductDemo />
       </div>
       <div>
-        <WhyChooseOurProduct/>
+        <WhyChooseOurProduct />
+      </div>
+      <div>
+        <OurProduct />
+      </div>
+      <div>
+        <GetUpToDate />
+      </div>
+      <div>
+        <Footer/>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ export const ContainerMenu = styled.div`
   position: fixed;
   width: 100%;
   margin: auto;
+  z-index:1;
 `;
 
 export const Logo = styled.div`
