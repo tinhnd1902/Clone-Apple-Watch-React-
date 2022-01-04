@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Menu from './page/menu'
 import Home from './page/home';
@@ -9,6 +8,9 @@ import ProductDemo from './page/productDemo';
 import WhyChooseOurProduct from './page/whyChooseOurProduct';
 import OurProduct from './page/ourProduct';
 import GetUpToDate from './page/getUpToDate';
+import CustomerFeedback from './page/customerFeedback';
+import FAQ from './page/FAQ';
+import NeedHelp from './page/needhelp';
 import Footer from './page/footer';
 
 function App() {
@@ -37,7 +39,16 @@ function App() {
         <GetUpToDate />
       </div>
       <div>
-        <Footer/>
+        <CustomerFeedback />
+      </div>
+      <div>
+        <FAQ />
+      </div>
+      <div>
+        <NeedHelp />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
