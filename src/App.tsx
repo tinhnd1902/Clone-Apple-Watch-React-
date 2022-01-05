@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Menu from './page/menu'
 import Home from './page/home';
-import SubHome from './page/aboutWatch';
+import AboutWatch from './page/aboutWatch';
 import Features from './page/coreFeatures';
 import ProductDemo from './page/productDemo';
 import WhyChooseOurProduct from './page/whyChooseOurProduct';
@@ -21,7 +21,7 @@ function App() {
           <Menu />
           <Home />
         </div>
-        <SubHome />
+     <AboutWatch />
       </div>
       <div className='features'>
         <Features />
@@ -30,25 +30,25 @@ function App() {
         <ProductDemo />
       </div>
       <div>
-        <WhyChooseOurProduct />
+        {/* <WhyChooseOurProduct /> */}
       </div>
       <div>
-        <OurProduct />
+        {/* <OurProduct /> */}
       </div>
       <div>
-        <GetUpToDate />
+        {/* <GetUpToDate /> */}
       </div>
       <div>
-        <CustomerFeedback />
+        {/* <CustomerFeedback /> */}
       </div>
       <div>
-        <FAQ />
+        {/* <FAQ /> */}
       </div>
       <div>
-        <NeedHelp />
+        {/* <NeedHelp /> */}
       </div>
       <div>
-        <Footer />
+        {/* <Footer />  */}
       </div>
     </div>
   );

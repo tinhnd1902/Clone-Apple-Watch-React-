@@ -1,7 +1,7 @@
 import React from 'react'
 import { ContainerSubHome, SubHomeContent, CaptionContentSubHome, CaptionImageSubHome, HeroButtonSubHome, Div } from './style'
 
-const SubHome = () => {
+const AboutWatch = () => {
   return (
     <Div>
       <ContainerSubHome>
@@ -28,4 +28,5 @@ const SubHome = () => {
   )
 }
 
-export default SubHome  
+export default AboutWatch  
+

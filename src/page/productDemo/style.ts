@@ -9,10 +9,28 @@ export const ContainerSubHome = styled.div`
   width: 100%;
   margin: auto;
   max-width: 64%;
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+  }
 `;
 
 export const SubHomeContent = styled.div`
   display: flex;
+  // flex-direction: row-reverse;
+
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    // flex-direction: column;  
+    flex-direction: column-reverse;
+
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const CaptionContentSubHome = styled.div`
@@ -55,24 +73,29 @@ export const CaptionContentSubHome = styled.div`
     margin: 45px 0 0;
     background-color: #3b04db;
   }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    padding-left: 0px;
+    // flex-direction: column;
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+    padding-left: 0px;
+
+  }
 `;
 
 export const CaptionImageSubHome = styled.div`
-positon: relative;
-.videos{
-  // position: absolute;
-  // left: 0;
-  // top: 0;
-  // width: 50%;
-  // height: 100%;
-  // background-image: url(../images/watch-img-2.jpg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
-}
+  positon: relative;
   img {
     max-width: 590px;
     border-radius: 10px;
+  }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
   }
 `;
 

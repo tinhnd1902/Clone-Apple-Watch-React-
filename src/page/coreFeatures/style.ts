@@ -6,7 +6,7 @@ export const Div = styled.div`
 
 export const ContainerFeatures = styled.div`
   max-width: 1145px;
-  text-align: center; 
+  text-align: center;
   padding-top: 90px;
   padding-bottom: 60px;
   .item {
@@ -16,12 +16,30 @@ export const ContainerFeatures = styled.div`
     display: flex;
     justify-content: center;
     padding-bottom: 60px;
-   
+  }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    .item {
+      display: flex;  
+      flex-direction: column;
+    }
+    .content{
+      max-width: 75%;
+      margin: 0 auto;
+    }
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
   }
 `;
 
 export const FeatureContent = styled.div`
-  // background-color:red
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px) {
+}
 `;
 
 export const CoreFeature = styled.div`
@@ -44,10 +62,19 @@ export const CoreFeature = styled.div`
     line-height: 26px;
     color: #444;
   }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    .item{
+      display:flex;
+      flex-direction: column;
+    }
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+  }
 `;
 
 export const ItemContainer = styled.div`
-  // padding: 0px 10px 10px 0px;
   h4 {
     font-weight: 700;
     margin: 0 0 12px;
@@ -59,6 +86,14 @@ export const ItemContainer = styled.div`
     color: #3b04db;
     margin: 0 0 15px;
   }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+  }
 `;
 
 export const ItemFeature = styled.div`
@@ -67,4 +102,10 @@ export const ItemFeature = styled.div`
   background-color: #fff;
   border-radius: 10px;
   margin: 0 15px 30px;
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+  }
 `;

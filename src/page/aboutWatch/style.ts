@@ -9,10 +9,28 @@ export const ContainerSubHome = styled.div`
 width: 100%;
 margin: auto;
 max-width: 64%;
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px){
+  
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px){
+    
+}
 `;
 
 export const SubHomeContent = styled.div`
 display: flex;
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px){
+  display:flex;
+  flex-direction: column;
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px){
+  display:flex;
+  flex-direction: column;
+}
 `;
 
 export const CaptionContentSubHome = styled.div`
@@ -66,16 +84,68 @@ button{
     margin: 45px 0 0;
     background-color: #3b04db
 }
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px){
+  
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px){
+    
+}
 `;
 
 export const CaptionImageSubHome = styled.div`
 
 img{
-max-width:590px;
+max-width:550px;
 border-radius:10px
+}
+/*Ipad ngang(1702 x xxx)*/
+@media screen and (max-width: 1702px){
+  padding-top: 60px;
+  img{
+    max-width:490px;
+    border-radius:10px
+    }
+}
+/*Ipad ngang(1588 x xxx)*/
+@media screen and (max-width: 1588px){
+  padding-top: 60px;
+  img{
+    max-width:420px;
+    border-radius:10px
+    }
+}
+/*Ipad ngang(1046 x xxx)*/
+@media screen and (max-width: 1046px){
+  padding-top: 60px;
+  img{
+    max-width:400px;
+    border-radius:10px
+    }
+}
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px){
+  padding-top: 60px;
+  img{
+    max-width:490px;
+    border-radius:10px
+    }
+}
+
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px){
+    
 }
 `;
 
 export const HeroButtonSubHome = styled.div`
-
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px){
+  
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px){
+    
+}
 `;

@@ -1,11 +1,16 @@
 import React from 'react'
 // import logo from '../../assets/images/logo.png'
-import { ContainerMenu, Logo, Nav } from './style'
+import {ContainerMenu, Logo, Nav } from './style';
+import './styleMenu.css';
 
 const Menu = () => {
+  window.addEventListener("scroll",function(){
+    var NavMenu = document.querySelector(".containerMenu");
+    NavMenu?.classList.toggle("sticky", window.scrollY > 0);
+  });
   return (
-    <div className='abc'>
-      <ContainerMenu>
+   <div className='Navv'>
+      <ContainerMenu className='containerMenu'>
         <Logo>
           {/* <img src={logo} alt="" /> */}
           <a href=""><img src={require('../../assets/images/logo.png')} alt="" /></a>
@@ -20,9 +25,8 @@ const Menu = () => {
             <li><a href="">Contact</a></li>
           </ul>
         </Nav>
-
       </ContainerMenu>
-    </div>
+  </div >
   )
 }
 

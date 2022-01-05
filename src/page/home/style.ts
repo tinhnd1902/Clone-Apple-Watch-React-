@@ -1,13 +1,21 @@
 import styled from "@emotion/styled";
 import banner from "../../assets/images/banner-1.png";
 
-
 export const ContainerHome = styled.div`
   // background-image: url("${banner}");
   width: 100%;
   margin: auto;
   max-width: 64%;
-  padding-top:200px;
+  padding-top: 200px;
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    padding-top: 150px;
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const HomeContent = styled.div`
@@ -22,13 +30,41 @@ export const HomeContent = styled.div`
     font-size: 16px;
     color: #fff;
   }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const CaptionImage = styled.div`
-  flex-wrap: wrap;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: 68px;
+  margin-bottom: 68px;
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    img {
+      width: 55%;
+    }
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+    img {
+      width: 45%;
+    }
+  }
 `;
 
 export const CaptionContent = styled.div`
@@ -38,10 +74,26 @@ export const CaptionContent = styled.div`
     font-weight: 800;
     margin: 0 0 25px;
   }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+  
+    h1{
+      font-size: 40px;
+    }
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  
+    h1{
+      font-size: 40px;
+    }
+  }
 `;
 
 export const HeroButton = styled.div`
-margin-top: 50px;
+  margin-top: 50px;
   button {
     color: #fff;
     overflow: hidden;
@@ -59,5 +111,12 @@ margin-top: 50px;
   & button:hover {
     background-color: #fff;
     color: blue;
+  }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+width:100%;
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
   }
 `;
