@@ -109,8 +109,8 @@ export const DownOurProduct = styled.div`
   @media screen and (max-width: 1024px) {
     .downContent {
       padding-top: 0px;
-      padding-bottom: 0px;
-      // margin: 0 auto;
+      padding-bottom: 40px;
+      margin: 0 auto;
       flex-direction: column;
       left: 0;
       right: 0;

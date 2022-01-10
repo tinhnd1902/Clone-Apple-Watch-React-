@@ -79,6 +79,11 @@ export const DownCustomerFeedback = styled.div`
         margin: 0 auto 30px;
       }
     }
+    .contentDown active {
+      opacity: 1;
+      transition-duration: 1s;
+      transform: scale(1.08);
+    }
     .client-comnt {
       h5 {
         font-style: italic;

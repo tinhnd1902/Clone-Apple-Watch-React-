@@ -1,38 +1,40 @@
 import React from 'react';
-import { ItemContainer, ItemFeature } from './style';
+// import { ItemContainer} from './style';
 import './index.css';
+import ItemFeatures from '../itemContainer';
+
 
 const ListFeatures = () => {
   const listCoreFeatures = [
     {
       icon: "fas fa-globe",
-      tagH4: "GPRS Tracking",
-      tagP: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
+      title: "GPRS Tracking",
+      content: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
     },
     {
       icon: "fas fa-bell",
-      tagH4: "Notification Alart",
-      tagP: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
+      title: "Notification Alart",
+      content: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
     },
     {
       icon: "fas fa-video",
-      tagH4: "Instant Video Call",
-      tagP: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
+      title: "Instant Video Call",
+      content: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
     },
     {
       icon: "fas fa-comment-alt",
-      tagH4: "User Live Chat",
-      tagP: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
+      title: "User Live Chat",
+      content: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
     },
     {
       icon: "fab fa-android",
-      tagH4: "Install Any App",
-      tagP: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
+      title: "Install Any App",
+      content: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
     },
     {
       icon: "fas fa-bullseye",
-      tagH4: "Attractive Design",
-      tagP: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
+      title: "Attractive Design",
+      content: "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim."
     },
   ]
   return (
@@ -40,13 +42,9 @@ const ListFeatures = () => {
        {
             listCoreFeatures.map((lists, index) => {
               return (
-                <ItemContainer key={index}>
-                  <ItemFeature>
-                    <i className={lists.icon}></i>
-                    <h4>{lists.tagH4}</h4>
-                    <p>{lists.tagP}</p>
-                  </ItemFeature>
-                </ItemContainer>
+                // <ItemContainer key={index}>
+                  <ItemFeatures icon={lists.icon} title={lists.title} content={lists.content}/>
+              // </ItemContainer>
               )
             })
           }
