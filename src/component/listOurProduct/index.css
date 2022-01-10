@@ -1,0 +1,10 @@
+.single{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1200px) {
+  .single{
+    justify-content: center;
+  }
+}

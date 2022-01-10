@@ -77,16 +77,16 @@ export const CaptionContent = styled.div`
   /*Ipad ngang(1024 x 768)*/
   @media screen and (max-width: 1024px) {
     text-align: center;
-  
-    h1{
+
+    h1 {
       font-size: 40px;
     }
   }
   /*Ipad dọc(768 x 1024)*/
   @media screen and (max-width: 768px) {
     text-align: center;
-  
-    h1{
+
+    h1 {
       font-size: 40px;
     }
   }
@@ -114,7 +114,7 @@ export const HeroButton = styled.div`
   }
   /*Ipad ngang(1024 x 768)*/
   @media screen and (max-width: 1024px) {
-width:100%;
+    width: 100%;
   }
   /*Ipad dọc(768 x 1024)*/
   @media screen and (max-width: 768px) {

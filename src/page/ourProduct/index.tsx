@@ -1,7 +1,10 @@
 import React from 'react'
-import { WrapOurProduct,ContainerOurProduct, UpOurProduct, DownOurProduct} from './style'
+import { WrapOurProduct, ContainerOurProduct, UpOurProduct, DownOurProduct } from './style';
+import ListOurProduct from '../../component/listOurProduct';
 
 const OurProduct = () => {
+  
+
   return (
     <WrapOurProduct>
       <ContainerOurProduct>
@@ -14,63 +17,7 @@ const OurProduct = () => {
         </UpOurProduct>
         <DownOurProduct>
           <div className="downContent">
-            <div className="singleContent">
-              <img src={require('../../assets/images/product-1.jpg')} alt="" />
-              <div className="subContent">
-                <h4>Olimus Blue</h4>
-                <h5>$188.00</h5>
-                <a href="">Order Now <i className="fas fa-long-arrow-alt-right"></i></a>
-              </div>
-            </div>
-            
-            <div className="singleContent">
-              <img src={require('../../assets/images/product-2.jpg')} alt="" />
-              <div className="subContent">
-                <h4>Amexso Black</h4>
-                <h5>$220.00</h5>
-                <a href="">Order Now <i className="fas fa-long-arrow-alt-right"></i></a>
-              </div>
-            </div>
-
-            <div className="singleContent">
-              <img src={require('../../assets/images/product-3.jpg')} alt="" />
-              <div className="subContent">
-                <h4>Latexo Green</h4>
-                <h5>$350.00</h5>
-                <a href="">Order Now <i className="fas fa-long-arrow-alt-right"></i></a>
-              </div>
-            </div>
-
-          </div>
-
-          <div className="downContent">
-            <div className="singleContent">
-              <img src={require('../../assets/images/product-4.jpg')} alt="" />
-              <div className="subContent">
-                <h4>Glasgox Green</h4>
-                <h5>$199.00</h5>
-                <a href="">Order Now <i className="fas fa-long-arrow-alt-right"></i></a>
-              </div>
-            </div>
-            
-            <div className="singleContent">
-              <img src={require('../../assets/images/product-3.jpg')} alt="" />
-              <div className="subContent">
-                <h4>Amelia Blue</h4>
-                <h5>$250.00</h5>
-                <a href="">Order Now <i className="fas fa-long-arrow-alt-right"></i></a>
-              </div>
-            </div>
-
-            <div className="singleContent">
-              <img src={require('../../assets/images/product-1.jpg')} alt="" />
-              <div className="subContent">
-                <h4>Alimax Pink</h4>
-                <h5>$299.00</h5>
-                <a href="">Order Now <i className="fas fa-long-arrow-alt-right"></i></a>
-              </div>
-            </div>
-
+           <ListOurProduct/>
           </div>
         </DownOurProduct>
       </ContainerOurProduct>
@@ -79,3 +26,4 @@ const OurProduct = () => {
 }
 
 export default OurProduct
+

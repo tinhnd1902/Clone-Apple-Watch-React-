@@ -3,18 +3,28 @@ import styled from "@emotion/styled";
 export const WrapOurProduct = styled.div`
   display: flex;
   justify-content: center;
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+  }
 `;
 
 export const ContainerOurProduct = styled.div`
-  max-width: 1145px;
-  // text-align:center;
-  // justify-content: center;
+  max-width: 1200px;
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+  }
 `;
 
 export const UpOurProduct = styled.div`
-display: flex;
-justify-content: center;
-text-align:center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   .upContent {
     max-width: 80%;
   }
@@ -35,23 +45,34 @@ text-align:center;
     line-height: 26px;
     color: #444;
   }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    .upContent {
+      max-width: 70%;
+    }
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+  }
 `;
 
 export const DownOurProduct = styled.div`
-padding-bottom: 40px;
+  padding-bottom: 40px;
   .singleContent {
+    display: flex;
+    justify-content: center;
     position: relative;
-    max-width: 100%;
+    // max-width: 33%;
+    margin-bottom: 160px;
     img {
-      margin: 0 15px;
+      // margin: 0 15px;
       max-width: 90%;
     }
   }
   .downContent {
     display: flex;
-    // padding: 90px 0px;
-    padding-top:30px;
-    padding-bottom: 120px;
+    padding-top: 30px;
+    flex-wrap: wrap;
   }
   .subContent {
     text-align: center;
@@ -82,6 +103,32 @@ padding-bottom: 40px;
       text-decoration: underline;
       margin: 10px 0 0;
       line-height: 20px;
+    }
+  }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    .downContent {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      // margin: 0 auto;
+      flex-direction: column;
+      left: 0;
+      right: 0;
+      width: 60%;
+      .subContent {
+        right: 90px;
+        width: 88%;
+      }
+    }
+    .singleContent {
+      margin: 80px auto;
+      max-width: 75%;
+    }
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 1248px) {
+    .singleContent {
+      max-width: 50%;
     }
   }
 `;

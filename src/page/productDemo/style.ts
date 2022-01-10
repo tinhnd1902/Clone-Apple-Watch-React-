@@ -23,9 +23,8 @@ export const SubHomeContent = styled.div`
 
   /*Ipad ngang(1024 x 768)*/
   @media screen and (max-width: 1024px) {
-    // flex-direction: column;  
+    // flex-direction: column;
     flex-direction: column-reverse;
-
   }
   /*Ipad dọc(768 x 1024)*/
   @media screen and (max-width: 768px) {
@@ -81,7 +80,6 @@ export const CaptionContentSubHome = styled.div`
   /*Ipad dọc(768 x 1024)*/
   @media screen and (max-width: 768px) {
     padding-left: 0px;
-
   }
 `;
 

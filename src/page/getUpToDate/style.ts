@@ -5,6 +5,12 @@ export const WrapGetUpToDate = styled.div`
   display: flex;
   justify-content: center;
   background-image: url("${bgr2}");
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+  }
 `;
 
 export const ContainerGetUpToDate = styled.div`
@@ -27,6 +33,13 @@ export const ContainerGetUpToDate = styled.div`
       line-height: 26px;
     }
   }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+    max-width: 90%;
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
+  }
 `;
 
 export const UpGetUpToDate = styled.div`
@@ -45,6 +58,12 @@ export const UpGetUpToDate = styled.div`
   p {
     font-size: 16px;
     line-height: 26px;
+  }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
   }
 `;
 
@@ -79,5 +98,11 @@ export const DownGetUpToDate = styled.div`
         top: 5px;
       }
     }
+  }
+  /*Ipad ngang(1024 x 768)*/
+  @media screen and (max-width: 1024px) {
+  }
+  /*Ipad dọc(768 x 1024)*/
+  @media screen and (max-width: 768px) {
   }
 `;

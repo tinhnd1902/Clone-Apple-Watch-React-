@@ -28,5 +28,5 @@ const AboutWatch = () => {
   )
 }
 
-export default AboutWatch  
+export default AboutWatch
 

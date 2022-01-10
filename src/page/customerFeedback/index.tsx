@@ -33,10 +33,10 @@ const CustomerFeedback = () => {
           </div>
         </DownCustomerFeedback>
         <SubDownCustomerFeedback>
-          <div className="button_group">
-            <button><i className="fas fa-chevron-left"></i> </button>
-            <button><i className="fas fa-chevron-right"></i> </button>
-          </div>
+          {/* <div className="button_group"> */}
+          <button><i className="fas fa-chevron-left"></i> </button>
+          <button><i className="fas fa-chevron-right"></i> </button>
+          {/* </div> */}
         </SubDownCustomerFeedback>
       </ContainerCustomerFeedback>
     </WrapCustomerFeedback>

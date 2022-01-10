@@ -20,7 +20,7 @@ const WhyChooseOurProduct = () => {
             <div className="textDown">
               <div className="why-chose-single">
                 <div className="icon">
-                <i className="fas fa-check-circle"></i>
+                  <i className="fas fa-check-circle"></i>
                 </div>
                 <div className="cont">
                   <h5>Our all products are high quality and fashionable with lifetime guarantee</h5>
@@ -28,7 +28,7 @@ const WhyChooseOurProduct = () => {
               </div>
               <div className="why-chose-single">
                 <div className="icon">
-                <i className="fas fa-check-circle"></i>
+                  <i className="fas fa-check-circle"></i>
                 </div>
                 <div className="cont">
                   <h5>Our all products are high quality and fashionable with lifetime guarantee</h5>
@@ -36,7 +36,7 @@ const WhyChooseOurProduct = () => {
               </div>
               <div className="why-chose-single">
                 <div className="icon">
-                <i className="fas fa-check-circle"></i>
+                  <i className="fas fa-check-circle"></i>
                 </div>
                 <div className="cont">
                   <h5>We are providing 24 hours dedicated support for our all customers</h5>

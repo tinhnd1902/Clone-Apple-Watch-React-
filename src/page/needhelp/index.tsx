@@ -30,17 +30,17 @@ const NeedHelp = () => {
             <form action="">
               <div className="form-group">
                 <label htmlFor="name">Name</label><br />
-                <input type="text" name='name' placeholder='Name*'/>
+                <input type="text" name='name' placeholder='Name*' />
               </div>
 
               <div className="form-group">
                 <label htmlFor="email">Email address</label><br />
-                <input type="text" name='email' placeholder='Enter email*'/>
+                <input type="text" name='email' placeholder='Enter email*' />
               </div>
 
               <div className="form-group">
                 <label htmlFor="message">Message</label><br />
-                <textarea name='message' placeholder='Write your message*'/>
+                <textarea name='message' placeholder='Write your message*' />
               </div>
 
               <button>Submit</button>

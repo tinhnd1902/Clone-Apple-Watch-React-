@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <WrapFooter>
       <ContainerFooter>
-      <a href=""><img src={require('../../assets/images/logo.png')} alt="" /></a>
+        <a href=""><img src={require('../../assets/images/logo.png')} alt="" /></a>
         <h4>Follow Us</h4>
         <ul>
           <li><i className="fab fa-facebook-square"></i></li>

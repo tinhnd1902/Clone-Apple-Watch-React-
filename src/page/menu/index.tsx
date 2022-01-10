@@ -1,15 +1,15 @@
 import React from 'react'
 // import logo from '../../assets/images/logo.png'
-import {ContainerMenu, Logo, Nav } from './style';
+import { ContainerMenu, Logo, Nav } from './style';
 import './styleMenu.css';
 
 const Menu = () => {
-  window.addEventListener("scroll",function(){
+  window.addEventListener("scroll", function () {
     var NavMenu = document.querySelector(".containerMenu");
     NavMenu?.classList.toggle("sticky", window.scrollY > 0);
   });
   return (
-   <div className='Navv'>
+    <div className='Navv'>
       <ContainerMenu className='containerMenu'>
         <Logo>
           {/* <img src={logo} alt="" /> */}
@@ -26,7 +26,7 @@ const Menu = () => {
           </ul>
         </Nav>
       </ContainerMenu>
-  </div >
+    </div >
   )
 }
 
