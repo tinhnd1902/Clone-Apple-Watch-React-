@@ -1,43 +1,22 @@
 import React, { useState } from 'react';
+import { useSelector } from '../../redux/store'
+import { useDispatch } from 'react-redux'
+import { nextSlider, prevSlider } from '../../redux/feedBack/feedBackAction'
 import { WrapCustomerFeedback, ContainerCustomerFeedback, UpCustomerFeedback, DownCustomerFeedback, SubDownCustomerFeedback } from './style';
-import anh1 from '../../assets/images/client-1.jpg';
-import anh2 from '../../assets/images/client-2.jpg';
-import anh3 from '../../assets/images/client-3.jpg';
 
 
 const CustomerFeedback = () => {
+  const { current, listCustomerFeedback } = useSelector(state => state.feedBackReducer)
 
-  const listCustomerFeedback = [
-    {
-      avatar: anh1,
-      content: "Laboriosam libero, aliquam magnam debitis exercitationem doloribus quo repellat aperiam doloremque aut, optio ab modi, itaque maiores labore.",
-      name: "- Adam Smith",
-      lever: "product marketer",
-    },
-    {
-      avatar: anh2,
-      content: "Praesent dapibus, neque id cursus faucibus, tortor neque egestas auguae, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis.",
-      name: "- Shane Kyle",
-      lever: "affiliate marketer",
-    },
-    {
-      avatar: anh3,
-      content: "Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi, itaque maiores labore.",
-      name: "- Micheal Jonson",
-      lever: "product manager",
-    }
-  ]
+  const dispatch = useDispatch()
 
-  const [current, setCurrent] = useState(0);
-  const length = listCustomerFeedback.length;
-
-  const nextSlider = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+  const handleNextSlider = () => {
+    dispatch(nextSlider())
   }
 
 
-  const prevSlider = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+  const handlePrevSlider = () => {
+    dispatch(prevSlider())
   }
 
   // if(!Array.isArray(listCustomerFeedback) || listCustomerFeedback.length <=0){
@@ -83,8 +62,8 @@ const CustomerFeedback = () => {
           }
         </DownCustomerFeedback>
         <SubDownCustomerFeedback>
-          <button onClick={prevSlider}><i className="fas fa-chevron-left"></i> </button>
-          <button onClick={nextSlider}><i className="fas fa-chevron-right"></i> </button>
+          <button onClick={handlePrevSlider}><i className="fas fa-chevron-left"></i> </button>
+          <button onClick={handleNextSlider}><i className="fas fa-chevron-right"></i> </button>
         </SubDownCustomerFeedback>
       </ContainerCustomerFeedback>
     </WrapCustomerFeedback>
