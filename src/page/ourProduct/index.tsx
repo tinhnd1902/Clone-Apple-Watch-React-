@@ -3,7 +3,7 @@ import { WrapOurProduct, ContainerOurProduct, UpOurProduct, DownOurProduct } fro
 import ListOurProduct from '../../component/listOurProduct';
 
 const OurProduct = () => {
-  
+
 
   return (
     <WrapOurProduct>
@@ -17,7 +17,7 @@ const OurProduct = () => {
         </UpOurProduct>
         <DownOurProduct>
           <div className="downContent">
-           <ListOurProduct/>
+            <ListOurProduct />
           </div>
         </DownOurProduct>
       </ContainerOurProduct>

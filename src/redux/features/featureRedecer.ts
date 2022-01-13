@@ -60,7 +60,7 @@ const featureReducer = (state = initialState, action: AnyAction) => {
       return {
         ...state,
         items: [...action.payload],
-        loading: false
+        loading: false,
       };
     default:
       return state;

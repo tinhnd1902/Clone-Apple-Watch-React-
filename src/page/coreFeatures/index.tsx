@@ -1,9 +1,9 @@
 import React from 'react'
-import { ContainerFeatures, FeatureContent, CoreFeature} from './style'
+import { ContainerFeatures, FeatureContent, CoreFeature } from './style'
 import ListFeatures from '../../component/listCoreFeatures'
 
 const Features = () => {
- 
+
   return (
     <ContainerFeatures>
       <FeatureContent>
@@ -15,7 +15,7 @@ const Features = () => {
           </CoreFeature>
         </div>
         <div className='item'>
-        <ListFeatures/>
+          <ListFeatures />
         </div>
       </FeatureContent>
     </ContainerFeatures>

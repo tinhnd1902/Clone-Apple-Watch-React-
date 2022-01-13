@@ -1,4 +1,4 @@
-import { NEXT_SLIDER, PREV_SLIDER} from "./feedBackConstant";
+import { NEXT_SLIDER, PREV_SLIDER } from "./feedBackConstant";
 
 const nextSlider = () => {
   return {
@@ -12,7 +12,4 @@ const prevSlider = () => {
   };
 };
 
-export {
-  nextSlider,
-  prevSlider
-};
+export { nextSlider, prevSlider };

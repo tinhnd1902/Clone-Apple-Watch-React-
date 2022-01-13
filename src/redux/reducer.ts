@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 import feedBackReducer from "./feedBack/feedBackReducer";
-import featureReducer from './features/featureRedecer'
+import featureReducer from "./features/featureRedecer";
 
 const rootReducer = combineReducers({ feedBackReducer, featureReducer });
 

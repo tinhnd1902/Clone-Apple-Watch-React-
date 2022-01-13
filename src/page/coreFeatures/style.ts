@@ -35,7 +35,6 @@ export const ContainerFeatures = styled.div`
 
 export const FeatureContent = styled.div`
   .item {
- 
   }
   /*Ipad ngang(1024 x 768)*/
   @media screen and (max-width: 1024px) {
@@ -76,5 +75,3 @@ export const CoreFeature = styled.div`
   @media screen and (max-width: 768px) {
   }
 `;
-
-
