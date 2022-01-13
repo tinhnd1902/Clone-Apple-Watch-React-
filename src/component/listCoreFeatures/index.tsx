@@ -5,12 +5,15 @@ import ItemFeatures from '../itemContainer';
 import { useSelector } from "../../redux/store"
 
 const ListFeatures = () => {
-  const listCoreFeatures = useSelector(state => state.featureReducer.listCoreFeatures);
-
+  const { items, loading } = useSelector(state => state.featureReducer);
+  if (loading) {
+    return <div>Loading</div>
+    console.log(loading)
+  }
   return (
     <div className='single-item'>
       {
-        listCoreFeatures.map((lists, index) => {
+        items.map((lists, index) => {
           return (
             // <ItemContainer key={index}>
             <ItemFeatures icon={lists.icon} title={lists.title} content={lists.content} />
